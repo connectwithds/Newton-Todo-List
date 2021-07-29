@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #ffff;
+  background: rgb(142, 73, 232);
+}
+body{
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+  background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+}
+.wrapper{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+  }
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+.inputField input{
+    width:80%;
+    height: 100%;
+    border : 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.inputField button{
+    width: 15%;
+    height: 100%;
+    border : none;
+    outline: none;
+    background: #BE49E8;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .todoList{
+max-height: 250px;
+overflow-y: auto;
+}
+.wrapper .completedTask{
+  max-height: 250px;
+  overflow-y: auto;
+}
+.completedTask .todoList{
+  margin: 5px 0;
+	padding: 20px;
+}
+.todoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+/* .todoList li span{
+    position:absolute;
+    right:-45px;
+    color:#fff;
+    width: 45px;
+    text-align: center;
+    background: red;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+} */
+
+/* .todoList li:hover span{
+    right: 0px;
+} */
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer button{
+    
+    border : none;
+    outline: none;
+    background: #BE49E8;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+/* li button {
+	float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 1px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+  color:#BE49E8;
+} */
+#delete {
+	float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 1px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+  color:red;
+}
+
+#right{
+  float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 1px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+  color:green;
+}
+h3{
+	font-size: 28px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+.completedTask li{
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
