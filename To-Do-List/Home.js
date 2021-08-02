@@ -106,3 +106,24 @@ deleteAllBtn.onclick = ()=>{
     localStorage.setItem("New Todo",JSON.stringify(listArr));
     showTasks();
 }
+
+
+
+///search Task
+let searchtextbox = document.getElementById("searchtask");
+searchtextbox.addEventListener("input", function(){
+    let trlist = document.querySelectorAll("li");
+    Array.from(trlist).forEach(function(item){
+        let searchedtext = item.innerText;
+        let searchtextboxval = searchtextbox.value;
+        let re = new RegExp(searchtextboxval, 'gi');
+        if(searchedtext.match(re)){
+            
+            //item.style.display="table-row";
+            item.style.color="green";
+        }
+        else{
+            item.style.display="none";
+        }
+    })
+})
